@@ -3,6 +3,27 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- ie detection -->
+		<script>
+			if (window.document.documentMode) {
+				document.onload = function () {
+					document.querySelectorAll('*').forEach(function (el) {
+						el.style.display = 'none';
+					});
+					window.location.href = 'https://browsehappy.com/';
+				};
+			}
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
 	</head>
